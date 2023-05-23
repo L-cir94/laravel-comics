@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
-Route::get('/', function () {
-    return view('comics');
-});
+})->name("home");
+Route::get('/comics', function () {
+    $products = config('db');
+    return view('comics', compact('products'));
+})->name("comics");

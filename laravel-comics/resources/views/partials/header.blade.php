@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row">
         <nav class="nav justify-content-center">
-          <a class="nav-link" href="/laravel-comics/resources/views/home.blade.php" aria-current="page">Home</a>
-          <a class="nav-link" href="../comics.blade.php">Comics</a>
+          <a class="nav-link" href="{{ route('home') }}" aria-current="page">Home</a>
+          <a class="nav-link" href="{{ route('comics') }}">Comics</a>
         </nav>
         </div>
     </div>
